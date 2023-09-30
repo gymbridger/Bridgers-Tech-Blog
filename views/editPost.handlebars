@@ -1,0 +1,28 @@
+<div class="edit-post-container">
+  <div class="edit-post">
+    <h2 id="edit-post-header">Edit Post</h2>
+    <form
+      class="edit-post-form"
+      action="/dashboard/edit/{{post.id}}"
+      method="POST"
+    >
+      <label  id="edit-post-title" for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value="{{post.title}}"
+        required
+      />
+
+      <label id="edit-post-content" for="content">Content:</label>
+      <input
+        id="content"
+        name="content"
+        required
+      value="{{post.content}}"></input>
+
+      <button id="submit-edit" type="submit">Update</button>
+    </form>
+  </div>
+</div>

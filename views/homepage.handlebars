@@ -1,0 +1,22 @@
+<div class="homepage">
+  {{#each posts as |post|}}
+    <div class="homepage-container">
+      <div class="post">
+        <h3 id="post-title">
+          <p id="post-title-text" href="/post/{{post.id}}">{{post.title}}</p>
+          <p id="post-user">Posted by:
+            {{post.user.username}}
+            on
+            {{formatDate post.created_at}}</p>
+        </h3>
+        <p id="post-content">{{post.content}}</p>
+        <div id="comment-post-div">
+          <a id="post-title-text" href="/post/{{post.id}}"><button
+              id="homepage-comment-button"
+            >Comment</button></a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+
+</div>

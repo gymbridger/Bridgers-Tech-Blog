@@ -1,0 +1,18 @@
+<div id="post-detail-div">
+  <h1 id="post-detail-header">{{post.title}}</h1>
+  <p id="post-detail-content">{{post.content}}</p>
+</div>
+
+{{! cant get this to work }}
+{{#each comments}}
+  <p>{{this.content}} - By: {{this.user.username}}</p>
+{{/each}}
+
+{{#if logged_in}}
+  <h2>Add a comment</h2>
+  <form method="POST" action="/comments">
+    <textarea name="content"></textarea>
+    <input type="hidden" name="post_id" value="{{post.id}}" />
+    <button type="submit">Submit Comment</button>
+  </form>
+{{/if}}

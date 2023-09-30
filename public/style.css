@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #8ebeaa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #231010;
+  padding: 2rem;
+  text-align: center;
+}
+
+.post {
+  border: 5px solid black;
+}
+
+nav a {
+  padding-left: 5rem;
+  text-decoration: none;
+  color: #8ebeaa;
+  font-size: 1.5rem;
+}
+
+.header-name {
+  color: wheat;
+}
+
+.header {
+  background-color: #231010;
+  padding: 2rem 8rem;
+  font-size: 1.5rem;
+}
+
+.homepage-container {
+  padding: 1rem 6rem;
+}
+
+#post-title {
+  background-color: #231010;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#post-title-text {
+  color: wheat;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#post-user {
+  color: wheat;
+}
+
+#post-content {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+.signup-container {
+  padding: 2rem 6rem;
+}
+
+#signup-header {
+  background-color: #231010;
+  color: #8ebeaa;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.signup-form {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
+}
+
+#signup-username {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+#username {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#signup-password {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#password {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#confirm-signup-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-container {
+  padding: 2rem 6rem;
+}
+
+#login-form {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
+}
+
+#login-header {
+  background-color: #231010;
+  color: #8ebeaa;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+#confirm-login-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#logout-btn {
+  padding-left: 5rem;
+  text-decoration: none;
+  color: #8ebeaa;
+  font-size: 1.5rem;
+  background-color: transparent;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.add-post-container {
+  padding: 2rem 6rem;
+}
+
+.new-post-form {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
+}
+
+#new-post-header {
+  background-color: #231010;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: wheat;
+}
+
+#new-post-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#title {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#content {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#new-post-submit {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#new-post-content {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#your-posts-header {
+  padding: 1rem;
+}
+
+.user-dashboard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.users-post {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+#dashboard-title {
+  background-color: #231010;
+  color: #8ebeaa;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2rem;
+  color: wheat;
+  font-size: 2rem;
+}
+
+#dashboard-post-content {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+#dashboard-post-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#edit-post-button {
+  background-color: #231010;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.delete-post-button {
+  background-color: #231010;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+#add-post-button {
+  background-color: #231010;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+
+.edit-post-container {
+  padding: 2rem 6rem;
+}
+
+.edit-post {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
+}
+
+.edit-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#edit-post-header {
+  background-color: #231010;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: wheat;
+}
+
+#edit-post-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#edit-post-content {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#submit-edit {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#homepage-comment-button {
+  background-color: #231010;
+  color: wheat;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+#comment-post-div {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+#post-detail-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#post-detail-header {
+  background-color: #231010;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: wheat;
+}
+
+#post-detail-content {
+  font-weight: bold;
+  font-size: 1.25rem;
+}

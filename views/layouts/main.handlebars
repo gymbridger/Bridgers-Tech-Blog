@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="main-nav">
+      <nav id="nav-header">
+        <a href="/">Home</a>
+
+        {{#if logged_in}}
+          <a href="/dashboard">Dashboard</a>
+          <!-- Logout form -->
+          <button id="logout-btn">Logout</button>
+        {{else}}
+          <a href="/users/login">Login</a>
+          <a href="/users/signup">Sign Up</a>
+        {{/if}}
+      </nav>
+      <div class="header">
+        <h2 class="header-name">Bridger's Tech Blog</h2>
+      </div>
+    </header>
+
+    {{{body}}}
+
+    {{#if logged_in}}
+      <script src="/logout.js"></script>
+    {{/if}}
+  </body>
+</html>
