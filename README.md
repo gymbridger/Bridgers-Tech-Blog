@@ -23,7 +23,7 @@ Run the command: `npm install` to all of the following packages
 
 To start the Tech Blog platform:
 
-In the root directory, run the command: `npm run start`
+In the root directory, run the command: `npm run seeds/index.js`, `npm run start`
 Navigate to http://localhost:3001 (or whichever port you've set) in your web browser.
 
 ## Credits
